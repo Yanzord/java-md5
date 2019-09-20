@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'com.yanzord.segurancainformacao.javamd5.Main'
+
+group 'java-md5'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': mainClassName,
+                'Class-Path': configurations.runtimeClasspath.collect { it.absolutePath }.join(' ')
+        )
+    }
+}
