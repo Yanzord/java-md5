@@ -9,8 +9,7 @@ Por Yan Pereira
 Este programa foi desenvolvido para o trabalho de *Hash* da disciplina de Segurança da Informação, do curso
 de Engenharia da computação do Centro Universitário de Técnologia - UNIFTEC.
 O programa utiliza o algorítmo [MD5](https://pt.wikipedia.org/wiki/MD5) de geração de hash para realizar uma simulação de um ataque de força bruta, comparando as hashs
-geradas a partir de um arquivo de palavras fornecido pelo usuário (*dicionario.txt*) com as hashs a serem descobertas de outro arquivo,
-também fornecido pelo usuário (*hashes.txt*).
+geradas a partir de um arquivo de palavras fornecido pelo usuário (*dicionario.txt*) com as hashs a serem descobertas de outro arquivo (*hashes.txt*), também fornecido pelo usuário.
 ## Requisitos
 Para compilar e executar o programa é necessário alguns pré-requisitos configurados na máquina:
 - O [Java JDK 8](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html) deve estar instalado, baixe a versão correspondente ao seu sistema e instale-a;
@@ -56,6 +55,4 @@ Para executar o programa é necessário compilá-lo:
         ```
     - Após a execução do comando o programa será iniciado no terminal.
 ## Funcionamento
-O programa é executado no console e não há input de dados, apenas a saída é apresentada com as hashs do arquivo *hashes.txt* e suas respectivas palavras,
-caso elas existam no arquivo *dicionario.txt*. Caso algum dos arquivos esteja vazio, o programa solicita o preenchimento e encerra a execução.
-Não é recomendado a execução do programa com arquivos grandes (como wordlists: *rockyou.txt*), pois o programa não é otimizado para tal.		    	    
+O programa é executado no console e não há input de dados, apenas a saída é apresentada com as hashs do arquivo *hashes.txt* e suas respectivas palavras, caso elas existam no arquivo *dicionario.txt*. Caso algum dos arquivos esteja vazio, o programa solicita o preenchimento e encerra a execução. Não é recomendado a execução do programa com arquivos grandes (como wordlists: *rockyou.txt*), pois o programa não é otimizado para tal.		    	    
