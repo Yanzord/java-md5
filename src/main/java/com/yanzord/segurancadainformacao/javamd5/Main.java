@@ -32,7 +32,7 @@ public class Main {
             PalavrasHash palavraHashEncontrada = hashMD5.encontraPalavraHash(palavrasHash, hash);
 
             if (palavraHashEncontrada == null) {
-                System.out.println(hash + ": " + "nenhuma palavra encontrada \n");
+                System.out.println(hash + ": nenhuma palavra encontrada \n");
             } else {
                 System.out.println(palavraHashEncontrada.getHash() + ": " + palavraHashEncontrada.getPalavra());
             }
